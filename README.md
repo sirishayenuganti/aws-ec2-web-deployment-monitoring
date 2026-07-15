@@ -33,6 +33,10 @@ underlying building blocks are the same ones demonstrated here:
 implementation of those same fundamentals.
 
 ## Architecture
+**Request Flow:**
+Internet → Security Group (Firewall: Port 80/22) → EC2 Instance (Ubuntu Linux) → Nginx Web Server
+**Monitoring Layer:**
+CloudWatch tracks EC2 CPU Utilization → Alarm triggers if usage exceeds threshold
 ## Skills Demonstrated
 - AWS EC2 provisioning and Linux server administration
 - Network security configuration (Security Groups)
