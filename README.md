@@ -22,6 +22,7 @@ building blocks behind how large platforms stay available and reliable.
 - Simulated a service outage and resolved it — practicing the exact 
   incident-response workflow systems engineers use at scale
 - Documented the entire process as a Standard Operating Procedure (SOP)
+- ![Nginx web server running](./nginx-live.jpeg)
 
 ## Real-World Parallel
 Platforms like Netflix run thousands of servers across global regions, 
@@ -32,3 +33,18 @@ underlying building blocks are the same ones demonstrated here:
 implementation of those same fundamentals.
 
 ## Architecture
+## Skills Demonstrated
+- AWS EC2 provisioning and Linux server administration
+- Network security configuration (Security Groups)
+- Application deployment (Nginx)
+- Cloud monitoring and alerting (CloudWatch)
+- Incident troubleshooting and resolution
+- Technical documentation (SOP)
+
+## Troubleshooting Case Study
+**Issue:** Web application unreachable — "Connection refused."
+**Root Cause:** Missing inbound Security Group rule for HTTP (port 80).
+**Fix:** Added inbound rule (port 80, source 0.0.0.0/0); verified via browser reload.
+
+## Tools & Services Used
+AWS EC2, AWS CloudWatch, AWS Security Groups (VPC), Ubuntu Linux, Nginx
